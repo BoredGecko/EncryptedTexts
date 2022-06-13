@@ -1,10 +1,5 @@
 # CryptedFriends - a program for encrypting messages.
 
-
-
-
-
-
 ## Idea: Communicating with friends with encrypted messages.
 
 ## Language: C#.
