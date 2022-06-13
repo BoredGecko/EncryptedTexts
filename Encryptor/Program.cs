@@ -1,10 +1,11 @@
 ﻿ushort n = 1;
-byte KEY;
-string text = "";
+byte KEY; //Ключ шифровки
+string text = ""; //Текст
+//Алфавит кодировки
 char[] alphabet = new char[90] { '2', '&', 'P', 'b', '*', 'Z', 'a', '8', 'B', 't', ':', 'u', 'v', '(', 'Q', '1', 'i', ')', 'w', 'x', ']', 'D', '№', '6', 'E', 'T', '"', 'j', 'k', 'l', '7', 'G', 'm', 'n', 'I', 'z', '!', '@', '#', '4', '%', '^', 'o', 'p', 'H', '_', '=', 'R', 'S', '?', ',', 'W', 'X', '3', 'J', 'K', 'y', '/', '|', ' ', 'Y', 'C', 'e', 'f', 'g', '9', '{', 'N', 'O', '}', '[', 'L', 'M', 'c', 'q', 'U', 'V', 'd', 'r', '5', 'h', 'A', '.', '$', 's', ';', 'F', '-', '+', '0'};
 for (int j = 0; j < n; j++)
 {
-    Console.Write("Encryptor/Decryptor [e/d]? >> ");
+    Console.Write("Encryptor/Decryptor [e/d]? >> "); //Выбор режима работы
     string type = Console.ReadLine();
     switch (type)
     {
@@ -390,6 +391,12 @@ for (int j = 0; j < n; j++)
                 }
                 Console.Write("\nDecrypt key >> " + KEY + "\n\nPress any key...");
                 Console.ReadKey();
+                Console.WriteLine("\n\n\nBy EvilVolfy (George Kondratev).\n\n");
+                for (int k = 5; k > 0; k--)
+                {
+                    Console.Write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bThe program will close automatically after {0} sec(s).", k);
+                    Thread.Sleep(1000);
+                }
             }
             break;
 
@@ -775,6 +782,12 @@ for (int j = 0; j < n; j++)
                 }
                 Console.WriteLine("\n\nPress any key...");
                 Console.ReadKey();
+                Console.WriteLine("\n\n\nBy EvilVolfy (George Kondratev).\n\n");
+                for (int k = 5; k > 0; k--)
+                {
+                    Console.Write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bThe program will close automatically after {0} sec(s).", k);
+                    Thread.Sleep(1000);
+                }
             }
             break;
          
