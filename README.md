@@ -32,7 +32,10 @@ Encryption is performed by the shift method.
 4. The number of the character in the encoding is changed taking into account the encryption key.
 5. The symbol is changed taking into account its new number in the encoding.
 6. The decrypted text is displayed.
+
+
 ____
+
 
 # CryptedFriends - программа для шифровки сообщений.
 
