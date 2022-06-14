@@ -34,7 +34,7 @@ Encryption is performed by the shift method.
 6. The decrypted text is displayed.
 
 ____
-Please let me know if you find a bug.
+Please [let me know](https://github.com/EvilVolfy/Simple-Encryptor-Decryptor/issues) if you find a bug.
 ____
 
 
@@ -73,4 +73,4 @@ ____
 5. Символ изменяется с учетом его нового номера в кодировке.
 6. Выводится расшифрованный текст.
  ____
- Пожалуйста, сообщите мне, если нашли баг.
+ Пожалуйста, [сообщите мне](https://github.com/EvilVolfy/Simple-Encryptor-Decryptor/issues), если нашли баг.
