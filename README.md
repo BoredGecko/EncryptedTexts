@@ -33,7 +33,8 @@ Encryption is performed by the shift method.
 5. The symbol is changed taking into account its new number in the encoding.
 6. The decrypted text is displayed.
 
-
+____
+##Please let me know if you find a bug.
 ____
 
 
@@ -71,4 +72,5 @@ ____
 4. Номер символа в кодировке изменяется с учетом ключа шифрования.
 5. Символ изменяется с учетом его нового номера в кодировке.
 6. Выводится расшифрованный текст.
-
+ ____
+ Пожалуйста, сообщите мне, если нашли баг.
