@@ -2,8 +2,6 @@
 
 ## Idea: Communicating with friends with encrypted messages.
 
-## Language: C#.
-
 ## Operating instructions:
 
 Select the operating mode of the program (encryption [E/e] or decryption [D/d] of the message). 
@@ -41,8 +39,6 @@ ____
 # CryptedFriends - программа для шифровки сообщений.
 
 ## Идея: общение с друзьями зашифрованными сообщениями.
-
-## Язык: C#.
 
 ## Инструкция по эксплуатации:
  
