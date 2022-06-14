@@ -34,7 +34,7 @@ Encryption is performed by the shift method.
 6. The decrypted text is displayed.
 
 ____
-##Please let me know if you find a bug.
+Please let me know if you find a bug.
 ____
 
 
