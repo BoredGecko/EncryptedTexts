@@ -1,10 +1,10 @@
-﻿bool end = false;
+﻿bool ending = false;
 Random Generating = new Random();
 int KEY = Generating.Next(); //Ключ шифровки
 string text = ""; //Текст
 //Алфавит кодировки
 char[] alphabet = new char[90] { '2', '&', 'P', 'b', '*', 'Z', 'a', '8', 'B', 't', ':', 'u', 'v', '(', 'Q', '1', 'i', ')', 'w', 'x', ']', 'D', '№', '6', 'E', 'T', '"', 'j', 'k', 'l', '7', 'G', 'm', 'n', 'I', 'z', '!', '@', '#', '4', '%', '^', 'o', 'p', 'H', '_', '=', 'R', 'S', '?', ',', 'W', 'X', '3', 'J', 'K', 'y', '/', '|', ' ', 'Y', 'C', 'e', 'f', 'g', '9', '{', 'N', 'O', '}', '[', 'L', 'M', 'c', 'q', 'U', 'V', 'd', 'r', '5', 'h', 'A', '.', '$', 's', ';', 'F', '-', '+', '0' };
-while (end == false)
+while (ending == false)
 {
     Console.Write("Encryptor/Decryptor [e/d]? >> "); //Выбор режима работы
     string type = Console.ReadLine();
@@ -398,7 +398,7 @@ while (end == false)
                     Console.Write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bThe program will close automatically after {0} sec(s).", k);
                     Thread.Sleep(1000);
                 }
-                end = true;
+                ending = true;
             }
             break;
 
@@ -792,7 +792,7 @@ while (end == false)
                     Console.Write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bThe program will close automatically after {0} sec(s).", k);
                     Thread.Sleep(1000);
                 }
-                end = true;
+                ending = true;
             }
             break;
 
