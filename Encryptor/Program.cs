@@ -3,7 +3,7 @@ Random Generating = new Random();
 int KEY = Generating.Next(); //Ключ шифровки
 string text = ""; //Текст
 //Алфавит кодировки
-char[] alphabet = new char[90] { '2', '&', 'P', 'b', '*', 'Z', 'a', '8', 'B', 't', ':', 'u', 'v', '(', 'Q', '1', 'i', ')', 'w', 'x', ']', 'D', '№', '6', 'E', 'T', '"', 'j', 'k', 'l', '7', 'G', 'm', 'n', 'I', 'z', '!', '@', '#', '4', '%', '^', 'o', 'p', 'H', '_', '=', 'R', 'S', '?', ',', 'W', 'X', '3', 'J', 'K', 'y', '/', '|', ' ', 'Y', 'C', 'e', 'f', 'g', '9', '{', 'N', 'O', '}', '[', 'L', 'M', 'c', 'q', 'U', 'V', 'd', 'r', '5', 'h', 'A', '.', '$', 's', ';', 'F', '-', '+', '0' };
+char[] alphabet = new char[156] { 'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '?', '/', ',', '.', ':', ';', '|', '=', '+', '-', '_', '(', ')', '*', '&', '^', '%', '$', '#', '№', '@', '"', '!', '{', '}', '[', ']', ' ', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
 while (ending == false)
 {
     Console.Write("Encryptor/Decryptor [e/d]? >> "); //Выбор режима работы
@@ -24,364 +24,639 @@ while (ending == false)
                     letters[i] = text[i];
                     switch (letters[i])
                     {
-                        case '2':
+                        default:
                             number[i] = 0;
                             break;
 
-                        case '&':
+                        case 'А':
+                            number[i] = 0;
+                            break;
+
+                        case 'Б':
                             number[i] = 1;
                             break;
 
-                        case 'P':
+                        case 'В':
                             number[i] = 2;
                             break;
 
-                        case 'b':
+                        case 'Г':
                             number[i] = 3;
                             break;
 
-                        case '*':
+                        case 'Д':
                             number[i] = 4;
                             break;
 
-                        case 'Z':
+                        case 'Е':
                             number[i] = 5;
                             break;
 
-                        case 'a':
+                        case 'Ё':
                             number[i] = 6;
                             break;
 
-                        case '8':
+                        case 'Ж':
                             number[i] = 7;
                             break;
 
-                        case 'B':
+                        case 'З':
                             number[i] = 8;
                             break;
 
-                        case 't':
+                        case 'И':
                             number[i] = 9;
                             break;
 
-                        case ':':
+                        case 'Й':
                             number[i] = 10;
                             break;
 
-                        case 'u':
+                        case 'К':
                             number[i] = 11;
                             break;
 
-                        case 'v':
+                        case 'Л':
                             number[i] = 12;
                             break;
 
-                        case '(':
+                        case 'М':
                             number[i] = 13;
                             break;
 
-                        case 'Q':
+                        case 'Н':
                             number[i] = 14;
                             break;
 
-                        case '1':
+                        case 'О':
                             number[i] = 15;
                             break;
 
-                        case 'i':
+                        case 'П':
                             number[i] = 16;
                             break;
 
-                        case ')':
+                        case 'Р':
                             number[i] = 17;
                             break;
 
-                        case 'w':
+                        case 'С':
                             number[i] = 18;
                             break;
 
-                        case 'x':
+                        case 'Т':
                             number[i] = 19;
                             break;
 
-                        case ']':
+                        case 'У':
                             number[i] = 20;
                             break;
 
-                        case 'D':
+                        case 'Ф':
                             number[i] = 21;
                             break;
 
-                        case '№':
+                        case 'Х':
                             number[i] = 22;
                             break;
 
-                        case '6':
+                        case 'Ц':
                             number[i] = 23;
                             break;
 
-                        case 'E':
+                        case 'Ч':
                             number[i] = 24;
                             break;
 
-                        case 'T':
+                        case 'Ш':
                             number[i] = 25;
                             break;
 
-                        case '"':
+                        case 'Щ':
                             number[i] = 26;
                             break;
 
-                        case 'j':
+                        case 'Ъ':
                             number[i] = 27;
                             break;
 
-                        case 'k':
+                        case 'Ы':
                             number[i] = 28;
                             break;
 
-                        case 'l':
+                        case 'Ь':
                             number[i] = 29;
                             break;
 
-                        case '7':
+                        case 'Э':
                             number[i] = 30;
                             break;
 
-                        case 'G':
+                        case 'Ю':
                             number[i] = 31;
                             break;
 
-                        case 'm':
+                        case 'Я':
                             number[i] = 32;
                             break;
 
-                        case 'n':
+                        case 'а':
                             number[i] = 33;
                             break;
 
-                        case 'I':
+                        case 'б':
                             number[i] = 34;
                             break;
 
-                        case 'z':
+                        case 'в':
                             number[i] = 35;
                             break;
 
-                        case '!':
+                        case 'г':
                             number[i] = 36;
                             break;
 
-                        case '@':
+                        case 'д':
                             number[i] = 37;
                             break;
 
-                        case '#':
+                        case 'е':
                             number[i] = 38;
                             break;
 
-                        case '4':
+                        case 'ё':
                             number[i] = 39;
                             break;
 
-                        case '%':
+                        case 'ж':
                             number[i] = 40;
                             break;
 
-                        case '^':
+                        case 'з':
                             number[i] = 41;
                             break;
 
-                        case 'o':
+                        case 'и':
                             number[i] = 42;
                             break;
 
-                        case 'p':
+                        case 'й':
                             number[i] = 43;
                             break;
 
-                        case 'H':
+                        case 'к':
                             number[i] = 44;
                             break;
 
-                        case '_':
+                        case 'л':
                             number[i] = 45;
                             break;
 
-                        case '=':
+                        case 'м':
                             number[i] = 46;
                             break;
 
-                        case 'R':
+                        case 'н':
                             number[i] = 47;
                             break;
 
-                        case 'S':
+                        case 'о':
                             number[i] = 48;
                             break;
 
-                        case '?':
+                        case 'п':
                             number[i] = 49;
                             break;
 
-                        case ',':
+                        case 'р':
                             number[i] = 50;
                             break;
 
-                        case 'W':
+                        case 'с':
                             number[i] = 51;
                             break;
 
-                        case 'X':
+                        case 'т':
                             number[i] = 52;
                             break;
 
-                        case '3':
+                        case 'у':
                             number[i] = 53;
                             break;
 
-                        case 'J':
+                        case 'ф':
                             number[i] = 54;
                             break;
 
-                        case 'K':
+                        case 'х':
                             number[i] = 55;
                             break;
 
-                        case 'y':
+                        case 'ц':
                             number[i] = 56;
                             break;
 
-                        case '/':
+                        case 'ч':
                             number[i] = 57;
                             break;
 
-                        case '|':
+                        case 'ш':
                             number[i] = 58;
                             break;
 
-                        case ' ':
+                        case 'щ':
                             number[i] = 59;
                             break;
 
-                        case 'Y':
+                        case 'ъ':
                             number[i] = 60;
                             break;
 
-                        case 'C':
+                        case 'ы':
                             number[i] = 61;
                             break;
 
-                        case 'e':
+                        case 'ь':
                             number[i] = 62;
                             break;
 
-                        case 'f':
+                        case 'э':
                             number[i] = 63;
                             break;
 
-                        case 'g':
+                        case 'ю':
                             number[i] = 64;
                             break;
 
-                        case '9':
+                        case 'я':
                             number[i] = 65;
                             break;
 
-                        case '{':
+                        case 'A':
                             number[i] = 66;
                             break;
 
-                        case 'N':
+                        case 'B':
                             number[i] = 67;
                             break;
 
-                        case 'O':
+                        case 'C':
                             number[i] = 68;
                             break;
 
-                        case '}':
+                        case 'D':
                             number[i] = 69;
                             break;
 
-                        case '[':
+                        case 'E':
                             number[i] = 70;
                             break;
 
-                        case 'L':
+                        case 'F':
                             number[i] = 71;
                             break;
 
-                        case 'M':
+                        case 'G':
                             number[i] = 72;
                             break;
 
-                        case 'c':
+                        case 'H':
                             number[i] = 73;
                             break;
 
-                        case 'q':
+                        case 'I':
                             number[i] = 74;
                             break;
 
-                        case 'U':
+                        case 'J':
                             number[i] = 75;
                             break;
 
-                        case 'V':
+                        case 'K':
                             number[i] = 76;
                             break;
 
-                        case 'd':
+                        case 'L':
                             number[i] = 77;
                             break;
 
-                        case 'r':
+                        case 'M':
                             number[i] = 78;
                             break;
 
-                        case '5':
+                        case 'N':
                             number[i] = 79;
                             break;
-                        case 'h':
+
+                        case 'O':
                             number[i] = 80;
                             break;
-                        case 'A':
+
+                        case 'P':
                             number[i] = 81;
                             break;
-                        case '.':
+
+                        case 'Q':
                             number[i] = 82;
                             break;
-                        case '$':
+
+                        case 'R':
                             number[i] = 83;
                             break;
-                        case 's':
+
+                        case 'S':
                             number[i] = 84;
                             break;
-                        case ';':
+
+                        case 'T':
                             number[i] = 85;
                             break;
-                        case 'F':
+
+                        case 'U':
                             number[i] = 86;
                             break;
-                        case '-':
+
+                        case 'V':
                             number[i] = 87;
                             break;
-                        case '+':
+
+                        case 'W':
                             number[i] = 88;
                             break;
-                        case '0':
+
+                        case 'X':
                             number[i] = 89;
                             break;
-                        default:
-                            number[i] = 0;
+
+                        case 'Y':
+                            number[i] = 90;
+                            break;
+
+                        case 'Z':
+                            number[i] = 91;
+                            break;
+
+                        case 'a':
+                            number[i] = 92;
+                            break;
+
+                        case 'b':
+                            number[i] = 93;
+                            break;
+
+                        case 'c':
+                            number[i] = 94;
+                            break;
+
+                        case 'd':
+                            number[i] = 95;
+                            break;
+
+                        case 'e':
+                            number[i] = 96;
+                            break;
+
+                        case 'f':
+                            number[i] = 97;
+                            break;
+
+                        case 'g':
+                            number[i] = 98;
+                            break;
+
+                        case 'h':
+                            number[i] = 99;
+                            break;
+
+                        case 'i':
+                            number[i] = 100;
+                            break;
+
+                        case 'j':
+                            number[i] = 101;
+                            break;
+
+                        case 'k':
+                            number[i] = 102;
+                            break;
+
+                        case 'l':
+                            number[i] = 103;
+                            break;
+
+                        case 'm':
+                            number[i] = 104;
+                            break;
+
+                        case 'n':
+                            number[i] = 105;
+                            break;
+
+                        case 'o':
+                            number[i] = 106;
+                            break;
+
+                        case 'p':
+                            number[i] = 107;
+                            break;
+
+                        case 'q':
+                            number[i] = 108;
+                            break;
+
+                        case 'r':
+                            number[i] = 109;
+                            break;
+
+                        case 's':
+                            number[i] = 110;
+                            break;
+
+                        case 't':
+                            number[i] = 111;
+                            break;
+
+                        case 'u':
+                            number[i] = 112;
+                            break;
+
+                        case 'v':
+                            number[i] = 113;
+                            break;
+
+                        case 'w':
+                            number[i] = 114;
+                            break;
+
+                        case 'x':
+                            number[i] = 115;
+                            break;
+
+                        case 'y':
+                            number[i] = 116;
+                            break;
+
+                        case 'z':
+                            number[i] = 117;
+                            break;
+
+                        case '?':
+                            number[i] = 118;
+                            break;
+
+                        case '/':
+                            number[i] = 119;
+                            break;
+
+                        case ',':
+                            number[i] = 120;
+                            break;
+
+                        case '.':
+                            number[i] = 121;
+                            break;
+
+                        case ':':
+                            number[i] = 122;
+                            break;
+
+                        case ';':
+                            number[i] = 123;
+                            break;
+
+                        case '|':
+                            number[i] = 124;
+                            break;
+
+                        case '=':
+                            number[i] = 125;
+                            break;
+
+                        case '+':
+                            number[i] = 126;
+                            break;
+
+                        case '-':
+                            number[i] = 127;
+                            break;
+
+                        case '_':
+                            number[i] = 128;
+                            break;
+
+                        case '(':
+                            number[i] = 129;
+                            break;
+
+                        case ')':
+                            number[i] = 130;
+                            break;
+
+                        case '*':
+                            number[i] = 131;
+                            break;
+
+                        case '&':
+                            number[i] = 132;
+                            break;
+
+                        case '^':
+                            number[i] = 133;
+                            break;
+
+                        case '%':
+                            number[i] = 134;
+                            break;
+
+                        case '$':
+                            number[i] = 135;
+                            break;
+
+                        case '#':
+                            number[i] = 136;
+                            break;
+
+                        case '№':
+                            number[i] = 137;
+                            break;
+
+                        case '@':
+                            number[i] = 138;
+                            break;
+
+                        case '"':
+                            number[i] = 139;
+                            break;
+
+                        case '!':
+                            number[i] = 140;
+                            break;
+
+                        case '{':
+                            number[i] = 141;
+                            break;
+
+                        case '}':
+                            number[i] = 142;
+                            break;
+
+                        case '[':
+                            number[i] = 143;
+                            break;
+
+                        case ']':
+                            number[i] = 144;
+                            break;
+
+                        case ' ':
+                            number[i] = 145;
+                            break;
+
+                        case '1':
+                            number[i] = 146;
+                            break;
+
+                        case '2':
+                            number[i] = 147;
+                            break;
+
+                        case '3':
+                            number[i] = 148;
+                            break;
+
+                        case '4':
+                            number[i] = 149;
+                            break;
+
+                        case '5':
+                            number[i] = 150;
+                            break;
+
+                        case '6':
+                            number[i] = 151;
+                            break;
+
+                        case '7':
+                            number[i] = 152;
+                            break;
+
+                        case '8':
+                            number[i] = 153;
+                            break;
+
+                        case '9':
+                            number[i] = 154;
+                            break;
+
+                        case '0':
+                            number[i] = 155;
                             break;
                     }
                 }            
                 for (int i = 0; i < text.Length; i++)
                 {
-                    byte n = Convert.ToByte(random.Next(1, 90));
-                    if (number[i] + n > 89) number[i] = number[i] + n - 90;
+                    byte n = Convert.ToByte(random.Next(1, 156));
+                    if (number[i] + n > 156) number[i] = number[i] + n - 156;
                     else number[i] += n;
                     letters[i] = alphabet[number[i]];
                 }
@@ -390,7 +665,7 @@ while (ending == false)
                 {
                     Console.Write(letters[i]);
                 }
-                Console.Write("\nDecrypt key >> " + KEY + "\n\nPress any key...");
+                Console.Write("\n\nDecrypt key >> " + KEY + "\n\n\nPress any key...");
                 Console.ReadKey();
                 Console.WriteLine("\n\n\nCopyright 2022 George Kondratev.\n\n");
                 for (int k = 5; k > 0; k--)
@@ -418,364 +693,639 @@ while (ending == false)
                     letters[i] = text[i];
                     switch (letters[i])
                     {
-                        case '2':
+                        default:
                             number[i] = 0;
                             break;
 
-                        case '&':
+                        case 'А':
+                            number[i] = 0;
+                            break;
+
+                        case 'Б':
                             number[i] = 1;
                             break;
 
-                        case 'P':
+                        case 'В':
                             number[i] = 2;
                             break;
 
-                        case 'b':
+                        case 'Г':
                             number[i] = 3;
                             break;
 
-                        case '*':
+                        case 'Д':
                             number[i] = 4;
                             break;
 
-                        case 'Z':
+                        case 'Е':
                             number[i] = 5;
                             break;
 
-                        case 'a':
+                        case 'Ё':
                             number[i] = 6;
                             break;
 
-                        case '8':
+                        case 'Ж':
                             number[i] = 7;
                             break;
 
-                        case 'B':
+                        case 'З':
                             number[i] = 8;
                             break;
 
-                        case 't':
+                        case 'И':
                             number[i] = 9;
                             break;
 
-                        case ':':
+                        case 'Й':
                             number[i] = 10;
                             break;
 
-                        case 'u':
+                        case 'К':
                             number[i] = 11;
                             break;
 
-                        case 'v':
+                        case 'Л':
                             number[i] = 12;
                             break;
 
-                        case '(':
+                        case 'М':
                             number[i] = 13;
                             break;
 
-                        case 'Q':
+                        case 'Н':
                             number[i] = 14;
                             break;
 
-                        case '1':
+                        case 'О':
                             number[i] = 15;
                             break;
 
-                        case 'i':
+                        case 'П':
                             number[i] = 16;
                             break;
 
-                        case ')':
+                        case 'Р':
                             number[i] = 17;
                             break;
 
-                        case 'w':
+                        case 'С':
                             number[i] = 18;
                             break;
 
-                        case 'x':
+                        case 'Т':
                             number[i] = 19;
                             break;
 
-                        case ']':
+                        case 'У':
                             number[i] = 20;
                             break;
 
-                        case 'D':
+                        case 'Ф':
                             number[i] = 21;
                             break;
 
-                        case '№':
+                        case 'Х':
                             number[i] = 22;
                             break;
 
-                        case '6':
+                        case 'Ц':
                             number[i] = 23;
                             break;
 
-                        case 'E':
+                        case 'Ч':
                             number[i] = 24;
                             break;
 
-                        case 'T':
+                        case 'Ш':
                             number[i] = 25;
                             break;
 
-                        case '"':
+                        case 'Щ':
                             number[i] = 26;
                             break;
 
-                        case 'j':
+                        case 'Ъ':
                             number[i] = 27;
                             break;
 
-                        case 'k':
+                        case 'Ы':
                             number[i] = 28;
                             break;
 
-                        case 'l':
+                        case 'Ь':
                             number[i] = 29;
                             break;
 
-                        case '7':
+                        case 'Э':
                             number[i] = 30;
                             break;
 
-                        case 'G':
+                        case 'Ю':
                             number[i] = 31;
                             break;
 
-                        case 'm':
+                        case 'Я':
                             number[i] = 32;
                             break;
 
-                        case 'n':
+                        case 'а':
                             number[i] = 33;
                             break;
 
-                        case 'I':
+                        case 'б':
                             number[i] = 34;
                             break;
 
-                        case 'z':
+                        case 'в':
                             number[i] = 35;
                             break;
 
-                        case '!':
+                        case 'г':
                             number[i] = 36;
                             break;
 
-                        case '@':
+                        case 'д':
                             number[i] = 37;
                             break;
 
-                        case '#':
+                        case 'е':
                             number[i] = 38;
                             break;
 
-                        case '4':
+                        case 'ё':
                             number[i] = 39;
                             break;
 
-                        case '%':
+                        case 'ж':
                             number[i] = 40;
                             break;
 
-                        case '^':
+                        case 'з':
                             number[i] = 41;
                             break;
 
-                        case 'o':
+                        case 'и':
                             number[i] = 42;
                             break;
 
-                        case 'p':
+                        case 'й':
                             number[i] = 43;
                             break;
 
-                        case 'H':
+                        case 'к':
                             number[i] = 44;
                             break;
 
-                        case '_':
+                        case 'л':
                             number[i] = 45;
                             break;
 
-                        case '=':
+                        case 'м':
                             number[i] = 46;
                             break;
 
-                        case 'R':
+                        case 'н':
                             number[i] = 47;
                             break;
 
-                        case 'S':
+                        case 'о':
                             number[i] = 48;
                             break;
 
-                        case '?':
+                        case 'п':
                             number[i] = 49;
                             break;
 
-                        case ',':
+                        case 'р':
                             number[i] = 50;
                             break;
 
-                        case 'W':
+                        case 'с':
                             number[i] = 51;
                             break;
 
-                        case 'X':
+                        case 'т':
                             number[i] = 52;
                             break;
 
-                        case '3':
+                        case 'у':
                             number[i] = 53;
                             break;
 
-                        case 'J':
+                        case 'ф':
                             number[i] = 54;
                             break;
 
-                        case 'K':
+                        case 'х':
                             number[i] = 55;
                             break;
 
-                        case 'y':
+                        case 'ц':
                             number[i] = 56;
                             break;
 
-                        case '/':
+                        case 'ч':
                             number[i] = 57;
                             break;
 
-                        case '|':
+                        case 'ш':
                             number[i] = 58;
                             break;
 
-                        case ' ':
+                        case 'щ':
                             number[i] = 59;
                             break;
 
-                        case 'Y':
+                        case 'ъ':
                             number[i] = 60;
                             break;
 
-                        case 'C':
+                        case 'ы':
                             number[i] = 61;
                             break;
 
-                        case 'e':
+                        case 'ь':
                             number[i] = 62;
                             break;
 
-                        case 'f':
+                        case 'э':
                             number[i] = 63;
                             break;
 
-                        case 'g':
+                        case 'ю':
                             number[i] = 64;
                             break;
 
-                        case '9':
+                        case 'я':
                             number[i] = 65;
                             break;
 
-                        case '{':
+                        case 'A':
                             number[i] = 66;
                             break;
 
-                        case 'N':
+                        case 'B':
                             number[i] = 67;
                             break;
 
-                        case 'O':
+                        case 'C':
                             number[i] = 68;
                             break;
 
-                        case '}':
+                        case 'D':
                             number[i] = 69;
                             break;
 
-                        case '[':
+                        case 'E':
                             number[i] = 70;
                             break;
 
-                        case 'L':
+                        case 'F':
                             number[i] = 71;
                             break;
 
-                        case 'M':
+                        case 'G':
                             number[i] = 72;
                             break;
 
-                        case 'c':
+                        case 'H':
                             number[i] = 73;
                             break;
 
-                        case 'q':
+                        case 'I':
                             number[i] = 74;
                             break;
 
-                        case 'U':
+                        case 'J':
                             number[i] = 75;
                             break;
 
-                        case 'V':
+                        case 'K':
                             number[i] = 76;
                             break;
 
-                        case 'd':
+                        case 'L':
                             number[i] = 77;
                             break;
 
-                        case 'r':
+                        case 'M':
                             number[i] = 78;
                             break;
 
-                        case '5':
+                        case 'N':
                             number[i] = 79;
                             break;
-                        case 'h':
+
+                        case 'O':
                             number[i] = 80;
                             break;
-                        case 'A':
+
+                        case 'P':
                             number[i] = 81;
                             break;
-                        case '.':
+
+                        case 'Q':
                             number[i] = 82;
                             break;
-                        case '$':
+
+                        case 'R':
                             number[i] = 83;
                             break;
-                        case 's':
+
+                        case 'S':
                             number[i] = 84;
                             break;
-                        case ';':
+
+                        case 'T':
                             number[i] = 85;
                             break;
-                        case 'F':
+
+                        case 'U':
                             number[i] = 86;
                             break;
-                        case '-':
+
+                        case 'V':
                             number[i] = 87;
                             break;
-                        case '+':
+
+                        case 'W':
                             number[i] = 88;
                             break;
-                        case '0':
+
+                        case 'X':
                             number[i] = 89;
                             break;
-                        default:
-                            number[i] = 0;
+
+                        case 'Y':
+                            number[i] = 90;
+                            break;
+
+                        case 'Z':
+                            number[i] = 91;
+                            break;
+
+                        case 'a':
+                            number[i] = 92;
+                            break;
+
+                        case 'b':
+                            number[i] = 93;
+                            break;
+
+                        case 'c':
+                            number[i] = 94;
+                            break;
+
+                        case 'd':
+                            number[i] = 95;
+                            break;
+
+                        case 'e':
+                            number[i] = 96;
+                            break;
+
+                        case 'f':
+                            number[i] = 97;
+                            break;
+
+                        case 'g':
+                            number[i] = 98;
+                            break;
+
+                        case 'h':
+                            number[i] = 99;
+                            break;
+
+                        case 'i':
+                            number[i] = 100;
+                            break;
+
+                        case 'j':
+                            number[i] = 101;
+                            break;
+
+                        case 'k':
+                            number[i] = 102;
+                            break;
+
+                        case 'l':
+                            number[i] = 103;
+                            break;
+
+                        case 'm':
+                            number[i] = 104;
+                            break;
+
+                        case 'n':
+                            number[i] = 105;
+                            break;
+
+                        case 'o':
+                            number[i] = 106;
+                            break;
+
+                        case 'p':
+                            number[i] = 107;
+                            break;
+
+                        case 'q':
+                            number[i] = 108;
+                            break;
+
+                        case 'r':
+                            number[i] = 109;
+                            break;
+
+                        case 's':
+                            number[i] = 110;
+                            break;
+
+                        case 't':
+                            number[i] = 111;
+                            break;
+
+                        case 'u':
+                            number[i] = 112;
+                            break;
+
+                        case 'v':
+                            number[i] = 113;
+                            break;
+
+                        case 'w':
+                            number[i] = 114;
+                            break;
+
+                        case 'x':
+                            number[i] = 115;
+                            break;
+
+                        case 'y':
+                            number[i] = 116;
+                            break;
+
+                        case 'z':
+                            number[i] = 117;
+                            break;
+
+                        case '?':
+                            number[i] = 118;
+                            break;
+
+                        case '/':
+                            number[i] = 119;
+                            break;
+
+                        case ',':
+                            number[i] = 120;
+                            break;
+
+                        case '.':
+                            number[i] = 121;
+                            break;
+
+                        case ':':
+                            number[i] = 122;
+                            break;
+
+                        case ';':
+                            number[i] = 123;
+                            break;
+
+                        case '|':
+                            number[i] = 124;
+                            break;
+
+                        case '=':
+                            number[i] = 125;
+                            break;
+
+                        case '+':
+                            number[i] = 126;
+                            break;
+
+                        case '-':
+                            number[i] = 127;
+                            break;
+
+                        case '_':
+                            number[i] = 128;
+                            break;
+
+                        case '(':
+                            number[i] = 129;
+                            break;
+
+                        case ')':
+                            number[i] = 130;
+                            break;
+
+                        case '*':
+                            number[i] = 131;
+                            break;
+
+                        case '&':
+                            number[i] = 132;
+                            break;
+
+                        case '^':
+                            number[i] = 133;
+                            break;
+
+                        case '%':
+                            number[i] = 134;
+                            break;
+
+                        case '$':
+                            number[i] = 135;
+                            break;
+
+                        case '#':
+                            number[i] = 136;
+                            break;
+
+                        case '№':
+                            number[i] = 137;
+                            break;
+
+                        case '@':
+                            number[i] = 138;
+                            break;
+
+                        case '"':
+                            number[i] = 139;
+                            break;
+
+                        case '!':
+                            number[i] = 140;
+                            break;
+
+                        case '{':
+                            number[i] = 141;
+                            break;
+
+                        case '}':
+                            number[i] = 142;
+                            break;
+
+                        case '[':
+                            number[i] = 143;
+                            break;
+
+                        case ']':
+                            number[i] = 144;
+                            break;
+
+                        case ' ':
+                            number[i] = 145;
+                            break;
+
+                        case '1':
+                            number[i] = 146;
+                            break;
+
+                        case '2':
+                            number[i] = 147;
+                            break;
+
+                        case '3':
+                            number[i] = 148;
+                            break;
+
+                        case '4':
+                            number[i] = 149;
+                            break;
+
+                        case '5':
+                            number[i] = 150;
+                            break;
+
+                        case '6':
+                            number[i] = 151;
+                            break;
+
+                        case '7':
+                            number[i] = 152;
+                            break;
+
+                        case '8':
+                            number[i] = 153;
+                            break;
+
+                        case '9':
+                            number[i] = 154;
+                            break;
+
+                        case '0':
+                            number[i] = 155;
                             break;
                     }
                 }
                 for (int i = 0; i < text.Length; i++)
                 {
-                    byte n = Convert.ToByte(random.Next(1, 90));
-                    if (number[i] - n < 0) number[i] = number[i] - n + 90;
+                    byte n = Convert.ToByte(random.Next(1, 156));
+                    if (number[i] - n < 0) number[i] = number[i] - n + 156;
                     else number[i] = number[i] - n;
                     letters[i] = alphabet[number[i]];
                 }
@@ -784,7 +1334,7 @@ while (ending == false)
                 {
                     Console.Write(letters[i]);
                 }
-                Console.WriteLine("\n\nPress any key...");
+                Console.WriteLine("\n\n\nPress any key...");
                 Console.ReadKey();
                 Console.WriteLine("\n\n\nCopyright 2022 George Kondratev.\n\n");
                 for (int k = 5; k > 0; k--)
