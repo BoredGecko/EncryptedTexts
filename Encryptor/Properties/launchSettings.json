@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CryptedFriends": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
