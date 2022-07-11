@@ -32,8 +32,8 @@
 6. Выводится расшифрованный текст.
  ____
  Пожалуйста, [сообщите мне](https://github.com/EvilVolfy/Simple-Encryptor-Decryptor/issues/new), если нашли баг.
- 
- # CryptedFriends is a program for encrypting messages.
+ ____
+ # CryptedFriends - a program for encrypting messages.
 
 ## Idea: Communicating with friends with encrypted messages.
 
