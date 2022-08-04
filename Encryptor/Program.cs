@@ -866,11 +866,12 @@ while (ending == false)
 if (Language == "en") Console.WriteLine("\n\n\nPress any key...");
 else if (Language == "rus") Console.WriteLine("\n\n\nНажмите любую клавишу...");
 Console.ReadKey();
-Console.WriteLine("\n\n\nCopyright© 2022 George Kondratev.\n\n");
+//Console.WriteLine("\n\n\nCopyright© 2022 George Kondratev.\n\n");
 
 for (int i = 5; i > 0; i--)
 {
     for (int j = 0; j < 52; j++) Console.Write("\b");
-    Console.Write("The program will close automatically after {0} sec(s).", i);
+    if (Language == "en") Console.Write("The program will close automatically after {0} sec(s).", i);
+    else if (Language == "rus") Console.Write("Программа закроется автоматически через {0} с.", i);
     Thread.Sleep(1000);
 }
