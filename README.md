@@ -1,4 +1,4 @@
-# CryptedFriends - программа для шифровки сообщений.
+# CryptedFriends - консольное приложение для шифровки сообщений.
 
 ## Идея: общение с друзьями зашифрованными сообщениями.
 
@@ -34,7 +34,7 @@
  Пожалуйста, [сообщите мне](https://github.com/EvilVolfy/Simple-Encryptor-Decryptor/issues/new), если нашли баг.
 
 
-# CryptedFriends is a program for encrypting messages.
+# CryptedFriends is a console application for encrypting messages.
 
 ## Idea: Communicating with friends with encrypted messages.
 
