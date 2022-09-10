@@ -1,5 +1,4 @@
-﻿using System.IO;
-
+﻿
 bool ending = false;
 bool SaveToFile = false;
 string Language = "en";
@@ -33,7 +32,7 @@ while (ending == false)
     Action = Console.ReadLine();
 #pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
     switch (Action)
-    {  
+    {
         default:
             {
                 if (Language == "en") Console.Write("\nIncorrect. Try again.");
@@ -41,11 +40,11 @@ while (ending == false)
                 Thread.Sleep(1000);
                 Console.Clear();
             }
-            break; 
+            break;
 
         //Encrypt
         case "1":
-            { 
+            {
                 Console.Clear();
                 if (Language == "en") Console.WriteLine("Enter unencrypted text:");
                 else if (Language == "rus") Console.WriteLine("Введите незашифрованный текст:");
@@ -55,7 +54,7 @@ while (ending == false)
 #pragma warning disable CS8602 // Разыменование вероятной пустой ссылки.
                 char[] letters = new char[text.Length];
 #pragma warning restore CS8602 // Разыменование вероятной пустой ссылки.
-                int[] number = new int[text.Length]; 
+                int[] number = new int[text.Length];
                 Random random = new(KEY);
                 for (int i = 0; i < text.Length; i++)
                 {
@@ -336,15 +335,13 @@ while (ending == false)
                 }
                 if (Language == "en") Console.Write("\n\nDecrypt key >> " + KEY);
                 else if (Language == "rus") Console.WriteLine("\n\nКлюч дешифрования >> " + KEY);
-                
+
+                //Сохранение в файл
                 if (SaveToFile == true)
                 {
-                    //Получение названий дисков
-                    string[] Drives = Environment.GetLogicalDrives();
                     try
                     {
-                        //Pass the filepath and filename to the StreamWriter Constructor
-                        StreamWriter sw = new StreamWriter(Drives[0] + "CryptedMessage.txt");
+                        StreamWriter sw = new StreamWriter(Directory.GetCurrentDirectory() + "\\CryptedMessage.txt");
                         //Запись текста
                         sw.WriteLine(letters);
                         //Запись ключа
@@ -354,8 +351,8 @@ while (ending == false)
                     }
                     finally
                     {
-                        if (Language == "en") Console.WriteLine("\nSaved to a file " + Drives[0] + "CryptedMessage.txt");
-                        else if (Language == "rus") Console.WriteLine("\nСохранено в файл " + Drives[0] + "CryptedMessage.txt");
+                        if (Language == "en") Console.WriteLine("\nSaved to a file " + Directory.GetCurrentDirectory() + "\\CryptedMessage.txt");
+                        else if (Language == "rus") Console.WriteLine("\nСохранено в файл " + Directory.GetCurrentDirectory() + "\\CryptedMessage.txt");
                     }
                 }
 
@@ -700,12 +697,12 @@ while (ending == false)
 #pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                                 string check = Console.ReadLine();
 #pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
-                                if (check == "YES" || check == "yes" || check == "Yes")
+                                if (check == "YES" || check == "Yes" || check == "yes")
                                 {
                                     Console.Clear();
                                     Language = "rus";
                                 }
-                                else if (check == "NO" || check == "no" || check == "No")
+                                else if (check == "NO" || check == "No" || check == "no")
                                 {
                                     Language = "en";
                                     Console.Clear();
@@ -724,12 +721,12 @@ while (ending == false)
 #pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                                 string check = Console.ReadLine();
 #pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
-                                if (check == "YES" || check == "yes" || check == "Yes")
+                                if (check == "YES" || check == "Yes" || check == "yes")
                                 {
                                     Language = "en";
                                     Console.Clear();
                                 }
-                                else if (check == "NO" || check == "no" || check == "No")
+                                else if (check == "NO" || check == "No" || check == "no")
                                 {
                                     Language = "rus";
                                     Console.Clear();
@@ -755,12 +752,12 @@ while (ending == false)
 #pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                                     string check = Console.ReadLine();
 #pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
-                                    if (check == "YES" || check == "yes" || check == "Yes")
+                                    if (check == "YES" || check == "Yes" || check == "yes")
                                     {
                                         SaveToFile = true;
                                         Console.Clear();
                                     }
-                                    else if (check == "NO" || check == "no" || check == "No")
+                                    else if (check == "NO" || check == "No" || check == "no")
                                     {
                                         SaveToFile = false;
                                         Console.Clear();
@@ -778,12 +775,12 @@ while (ending == false)
 #pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                                     string check = Console.ReadLine();
 #pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
-                                    if (check == "YES" || check == "yes" || check == "Yes")
+                                    if (check == "YES" || check == "Yes" || check == "yes")
                                     {
                                         SaveToFile = false;
                                         Console.Clear();
                                     }
-                                    else if (check == "NO" || check == "no" || check == "No")
+                                    else if (check == "NO" || check == "No" || check == "no")
                                     {
                                         SaveToFile = true;
                                         Console.Clear();
@@ -805,12 +802,12 @@ while (ending == false)
 #pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                                     string check = Console.ReadLine();
 #pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
-                                    if (check == "YES" || check == "yes" || check == "Yes")
+                                    if (check == "YES" || check == "Yes" || check == "yes")
                                     {
                                         SaveToFile = true;
                                         Console.Clear();
                                     }
-                                    else if (check == "NO" || check == "no" || check == "No")
+                                    else if (check == "NO" || check == "No" || check == "no")
                                     {
                                         SaveToFile = false;
                                         Console.Clear();
@@ -828,12 +825,12 @@ while (ending == false)
 #pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                                     string check = Console.ReadLine();
 #pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
-                                    if (check == "YES" || check == "yes" || check == "Yes")
+                                    if (check == "YES" || check == "Yes" || check == "yes")
                                     {
                                         SaveToFile = false;
                                         Language = "rus";
                                     }
-                                    else if (check == "NO" || check == "no" || check == "No")
+                                    else if (check == "NO" || check == "No" || check == "no")
                                     {
                                         SaveToFile = true;
                                         Console.Clear();

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptedFriends", "Encryptor\CryptedFriends.csproj", "{0BA191BA-A3E4-4BB1-B475-284D4F8B7007}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptorWF", "..\EncryptorWF\EncryptorWF\EncryptorWF.csproj", "{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{0BA191BA-A3E4-4BB1-B475-284D4F8B7007}.Release|x64.Build.0 = Release|x64
 		{0BA191BA-A3E4-4BB1-B475-284D4F8B7007}.Release|x86.ActiveCfg = Release|x86
 		{0BA191BA-A3E4-4BB1-B475-284D4F8B7007}.Release|x86.Build.0 = Release|x86
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Debug|x64.Build.0 = Debug|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Debug|x86.Build.0 = Debug|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Release|x64.ActiveCfg = Release|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Release|x64.Build.0 = Release|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Release|x86.ActiveCfg = Release|Any CPU
+		{F859ACC3-3E1D-4FEB-AD59-615EBB1AECCC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
