@@ -20,3 +20,14 @@ F:\TextEncryptorMain\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEnc
 F:\TextEncryptorMain\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.CoreCompileInputs.cache
 F:\TextEncryptorMain\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.exe
 F:\TextEncryptorMain\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.pdb
+D:\TextEncryptor\DesktopTextEncryptor\bin\Debug\DesktopTextEncryptor.exe.config
+D:\TextEncryptor\DesktopTextEncryptor\bin\Debug\DesktopTextEncryptor.exe
+D:\TextEncryptor\DesktopTextEncryptor\bin\Debug\DesktopTextEncryptor.pdb
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.AssemblyReference.cache
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.SuggestedBindingRedirects.cache
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.Form1.resources
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.Properties.Resources.resources
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.GenerateResource.cache
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.CoreCompileInputs.cache
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.exe
+D:\TextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.pdb

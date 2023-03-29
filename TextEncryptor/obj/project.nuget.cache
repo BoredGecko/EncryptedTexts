@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hgKr7d2/VmpiDNjRSFZ0cZpTrJhdRJQ8VSCRw7jxtXopNbySR4hV4zz51SlnPmpLSxtrL2YQbdE3FldHGhSrQw==",
+  "dgSpecHash": "IIxinOGp0Nz32UTgeDi3ny75KSnAuqCO8u+PvlrkJb7roZaTzbo7FhwGoVSHcmZtD7g22xRm47sE9vKb74qgMw==",
   "success": true,
-  "projectFilePath": "A:\\TextEncryptor\\TextEncryptor\\TextEncryptor.csproj",
+  "projectFilePath": "D:\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

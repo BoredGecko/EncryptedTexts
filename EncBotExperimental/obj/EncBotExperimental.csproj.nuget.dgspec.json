@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "A:\\TextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj": {}
+    "D:\\MainTextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj": {}
   },
   "projects": {
-    "A:\\TextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj": {
+    "D:\\MainTextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\TextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj",
+        "projectUniqueName": "D:\\MainTextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj",
         "projectName": "EncBotExperimental",
-        "projectPath": "A:\\TextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj",
-        "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "A:\\TextEncryptor\\EncBotExperimental\\obj\\",
+        "projectPath": "D:\\MainTextEncryptor\\EncBotExperimental\\EncBotExperimental.csproj",
+        "packagesPath": "C:\\Users\\ge-ko\\.nuget\\packages\\",
+        "outputPath": "D:\\MainTextEncryptor\\EncBotExperimental\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ge-ko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

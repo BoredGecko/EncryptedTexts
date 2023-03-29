@@ -74,9 +74,9 @@
             this.groupClipboard.Controls.Add(this.modeClipboardTextAndKey);
             this.groupClipboard.Controls.Add(this.modeClipboardKeyOnly);
             this.groupClipboard.Controls.Add(this.modeClipboardTextOnly);
-            this.groupClipboard.Location = new System.Drawing.Point(7, 230);
+            this.groupClipboard.Location = new System.Drawing.Point(7, 221);
             this.groupClipboard.Name = "groupClipboard";
-            this.groupClipboard.Size = new System.Drawing.Size(215, 71);
+            this.groupClipboard.Size = new System.Drawing.Size(215, 75);
             this.groupClipboard.TabIndex = 2;
             this.groupClipboard.TabStop = false;
             this.groupClipboard.Text = "Скопировать";
@@ -84,7 +84,7 @@
             // modeClipboardTextAndKey
             // 
             this.modeClipboardTextAndKey.AutoSize = true;
-            this.modeClipboardTextAndKey.Location = new System.Drawing.Point(8, 47);
+            this.modeClipboardTextAndKey.Location = new System.Drawing.Point(8, 50);
             this.modeClipboardTextAndKey.Name = "modeClipboardTextAndKey";
             this.modeClipboardTextAndKey.Size = new System.Drawing.Size(113, 21);
             this.modeClipboardTextAndKey.TabIndex = 2;
@@ -94,7 +94,7 @@
             // modeClipboardKeyOnly
             // 
             this.modeClipboardKeyOnly.AutoSize = true;
-            this.modeClipboardKeyOnly.Location = new System.Drawing.Point(8, 30);
+            this.modeClipboardKeyOnly.Location = new System.Drawing.Point(8, 33);
             this.modeClipboardKeyOnly.Name = "modeClipboardKeyOnly";
             this.modeClipboardKeyOnly.Size = new System.Drawing.Size(110, 21);
             this.modeClipboardKeyOnly.TabIndex = 1;
@@ -105,7 +105,7 @@
             // 
             this.modeClipboardTextOnly.AutoSize = true;
             this.modeClipboardTextOnly.Checked = true;
-            this.modeClipboardTextOnly.Location = new System.Drawing.Point(8, 13);
+            this.modeClipboardTextOnly.Location = new System.Drawing.Point(8, 16);
             this.modeClipboardTextOnly.Name = "modeClipboardTextOnly";
             this.modeClipboardTextOnly.Size = new System.Drawing.Size(113, 21);
             this.modeClipboardTextOnly.TabIndex = 0;
@@ -119,11 +119,11 @@
             this.groupKeyMode.Controls.Add(this.groupKey);
             this.groupKeyMode.Controls.Add(this.keyModeInput);
             this.groupKeyMode.Controls.Add(this.keyModeRand);
-            this.groupKeyMode.Location = new System.Drawing.Point(7, 85);
+            this.groupKeyMode.Location = new System.Drawing.Point(7, 81);
             this.groupKeyMode.Margin = new System.Windows.Forms.Padding(4);
             this.groupKeyMode.Name = "groupKeyMode";
             this.groupKeyMode.Padding = new System.Windows.Forms.Padding(4);
-            this.groupKeyMode.Size = new System.Drawing.Size(215, 143);
+            this.groupKeyMode.Size = new System.Drawing.Size(215, 135);
             this.groupKeyMode.TabIndex = 1;
             this.groupKeyMode.TabStop = false;
             this.groupKeyMode.Text = "Ключ";
@@ -131,7 +131,7 @@
             // keyValue
             // 
             this.keyValue.AutoSize = true;
-            this.keyValue.Location = new System.Drawing.Point(13, 119);
+            this.keyValue.Location = new System.Drawing.Point(13, 112);
             this.keyValue.Name = "keyValue";
             this.keyValue.Size = new System.Drawing.Size(56, 17);
             this.keyValue.TabIndex = 1;
@@ -140,7 +140,7 @@
             // groupKey
             // 
             this.groupKey.Controls.Add(this.keyInput);
-            this.groupKey.Location = new System.Drawing.Point(8, 60);
+            this.groupKey.Location = new System.Drawing.Point(8, 53);
             this.groupKey.Margin = new System.Windows.Forms.Padding(4);
             this.groupKey.Name = "groupKey";
             this.groupKey.Padding = new System.Windows.Forms.Padding(4);
@@ -166,7 +166,7 @@
             // 
             this.keyModeInput.AutoSize = true;
             this.keyModeInput.Checked = true;
-            this.keyModeInput.Location = new System.Drawing.Point(8, 40);
+            this.keyModeInput.Location = new System.Drawing.Point(8, 33);
             this.keyModeInput.Margin = new System.Windows.Forms.Padding(4);
             this.keyModeInput.Name = "keyModeInput";
             this.keyModeInput.Size = new System.Drawing.Size(135, 21);
@@ -179,7 +179,7 @@
             // keyModeRand
             // 
             this.keyModeRand.AutoSize = true;
-            this.keyModeRand.Location = new System.Drawing.Point(8, 21);
+            this.keyModeRand.Location = new System.Drawing.Point(8, 14);
             this.keyModeRand.Margin = new System.Windows.Forms.Padding(4);
             this.keyModeRand.Name = "keyModeRand";
             this.keyModeRand.Size = new System.Drawing.Size(127, 21);
@@ -196,7 +196,7 @@
             this.groupMode.Margin = new System.Windows.Forms.Padding(4);
             this.groupMode.Name = "groupMode";
             this.groupMode.Padding = new System.Windows.Forms.Padding(4);
-            this.groupMode.Size = new System.Drawing.Size(215, 68);
+            this.groupMode.Size = new System.Drawing.Size(215, 62);
             this.groupMode.TabIndex = 0;
             this.groupMode.TabStop = false;
             this.groupMode.Text = "Режим работы";
@@ -204,7 +204,7 @@
             // modeDecrypt
             // 
             this.modeDecrypt.AutoSize = true;
-            this.modeDecrypt.Location = new System.Drawing.Point(8, 40);
+            this.modeDecrypt.Location = new System.Drawing.Point(8, 37);
             this.modeDecrypt.Margin = new System.Windows.Forms.Padding(4);
             this.modeDecrypt.Name = "modeDecrypt";
             this.modeDecrypt.Size = new System.Drawing.Size(124, 21);
@@ -217,7 +217,7 @@
             // 
             this.modeEncrypt.AutoSize = true;
             this.modeEncrypt.Checked = true;
-            this.modeEncrypt.Location = new System.Drawing.Point(8, 19);
+            this.modeEncrypt.Location = new System.Drawing.Point(8, 16);
             this.modeEncrypt.Margin = new System.Windows.Forms.Padding(4);
             this.modeEncrypt.Name = "modeEncrypt";
             this.modeEncrypt.Size = new System.Drawing.Size(117, 21);

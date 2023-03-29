@@ -96,10 +96,10 @@ namespace DesktopTextEncryptor
                 modeClipboardTextAndKey.Enabled = true;
                 keyModeRand.Visible = true;
                 keyModeInput.Visible = true;
-                groupKey.Location = new Point(8, 60);
-                keyValue.Location = new Point(13, 119);
-                groupKeyMode.Size = new Size(215, 143);
-                groupClipboard.Location = new Point(7, 230);
+                groupKey.Location = new Point(8, 53);
+                keyValue.Location = new Point(13, 112);
+                groupKeyMode.Size = new Size(215, 135);
+                groupClipboard.Location = new Point(7, 223);
                 if (keyModeInput.Checked)
                     groupKey.Enabled = true;
                 else 
@@ -136,11 +136,13 @@ namespace DesktopTextEncryptor
         private void buttonCopy_Click(object sender, EventArgs e)
         {
             if (modeClipboardTextOnly.Checked)
-                Clipboard.SetText(textSecond.Text);
+                if(textSecond.TextLength!=0)
+                    Clipboard.SetText(textSecond.Text);
             if (modeClipboardKeyOnly.Checked)
                 Clipboard.SetText(Key.ToString());
             if (modeClipboardTextAndKey.Checked)
-                Clipboard.SetText(textSecond.Text + '\n' + "Ключ: " + Key.ToString());
+                if (textSecond.TextLength != 0)
+                    Clipboard.SetText(textSecond.Text + '\n' + "Ключ: " + Key.ToString());
 
         }
 
