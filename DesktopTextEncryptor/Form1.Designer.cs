@@ -236,7 +236,6 @@
             this.textFirst.Size = new System.Drawing.Size(539, 122);
             this.textFirst.TabIndex = 1;
             this.textFirst.Text = "";
-            this.textFirst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textFirst_KeyPress);
             // 
             // textSecond
             // 
@@ -283,6 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(803, 331);
             this.Controls.Add(this.progressCrypting);
             this.Controls.Add(this.buttonCopy);
@@ -294,6 +294,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "TextEncryptor";
             this.groupSettings.ResumeLayout(false);

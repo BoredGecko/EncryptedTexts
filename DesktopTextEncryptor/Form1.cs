@@ -19,60 +19,72 @@ namespace DesktopTextEncryptor
             keyReset();
         }
         public static string Alphabet =
-       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#№$%&()*+,-./:;<=>?@[]^_`{|}~АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ" +
-           "абвгдеёжзийклмнопрстуфхцчшщъыьэюя ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷ø" +
-           "ùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰű" +
-           "ŲųŴŵŶŷŸŹźŻżŽžſ‴‖‗―‒‐•❶❷❸❹❺❻❼❽❾❿⓫⓬⓭⓮⓯⓰⓱⓲⓳⓴⓿₠₡₢₣₤₥₦₧₨₩₪₫€₭₮₯₰₱₲₳₴₵₸₹₺₻₼₽₾₿Ѳᴁᴂᴆᴚᴔ⁞…⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚" +
-           "⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿⡀⡁⡂⡃⡄⡅⡆⡇⡈⡉⡊⡋⡌⡍⡎⡏⡐⡑⡒⡓⡔⡕⡖⡗⡘⡙⡚⡛⡜⡝⡞⡟⡠⡡⡢⡣⡤⡥⡦⡧⡨⡩⡪⡫⡬⡭⡮⡯⡰⡱⡲⡳⡴⡵⡶⡷⡸⡹⡺⡻⡼⡽⡾⡿⢀⢁⢂⢃⢄⢅⢆⢇⢈⢉⢊⢋⢌⢍⢎⢏⢐⢑⢒⢓" +
-           "⢔⢕⢖⢗⢘⢙⢚⢛⢜⢝⢞⢟⢠⢡⢢⢣⢤⢥⢦⢧⢨⢩⢪⢫⢬⢭⢮⢯⢰⢱⢲⢳⢴⢵⢶⢷⢸⢹⢺⢻⢼⢽⢾⢿⣀⣁⣂⣃⣄⣅⣆⣇⣈⣉⣊⣋⣌⣍⣎⣏⣐⣑⣒⣓⣔⣕⣖⣗⣘⣙⣚⣛⣜⣝⣞⣟⣠⣡⣢⣣⣤⣥⣦⣧⣨⣩⣪⣫⣬⣭⣮⣯⣰⣱⣲⣳⣴⣵⣶⣷⣸⣹⣺⣻⣼⣽⣾⣿ᐍᐎᐏᐐᐑᐒᐓᐔᐕᐖ" +
-           "ᐗᐘᐙᐚᐛᐜᐝᐞᐟᐠᐡᐢᐣᐤᐥᐦᐧᐨᐩᐪᐫᐬᐭᐮᐯᐰᐱᐲᐳᐴᐵᐶᐷᐸᐹᐺᐻᐼᐽᐾᐿᑀᑁᑂᑃᑄᑅᑆᑇᑈᑉᑊᑋᑌᑍᑎᑏᑐᑑᑒᑓᑔᑕᑖᑗᑘᑙᑚᑛᑜᑝᑞᑟᑠᑡᑢᑣᑤᑥᑦᑧᑨᑩᑪᒃᒄᒅᒆᒇᒈᒉᒊᒋᒌᒍᒎᒏᒐᒑᒒᒓᒔ" +
-           "ᒕᒖᒗᒘᒙᒚᒛᒜᒝᒞᒟᒠᒡᒢᒣᒤᒥᒦᒧᒨᒩᒪᒫᒬᒭᒮᒯᒰᒱᒲᒳᒴᒵᒶᒷᒸᒹᒺᓀᓁᓂᓃᓄᓅᓆᓇᓈᓉᓊᓋᓌᓍᓎᓏᓐᓑᓒᓓᓔᓕᓖᓗᓘᓙᓚᓛᓜᓝᓞᓟᓠᓡᓢᓣᓤᓥᓦᓧᓨᓩᓶᓷᓸᓹᓺᓻᓼᓽᓾᓿᔀᔁᔂᔃᔄᔅᔆᔇᔐᔑᔒᔓᔔᔕ" +
-           "ᔖᔗᔘᔙᔚᔛᔜᔟᔠᔡᔢᔣᔤᔥᔦᔧᔨᔩᔪᔫᔬᔭᔮᔯᔰᔱᔲᔳᔴᔵᔶᔷᔸᔹᔺᔻᔼᔽᔾᕒᕓᕔᕕᕖᕗᕘᕙᕚᕛᕜᕝᕞᕟᕠᕡᕢᕣᕤᕥᕦᕧᕨᕩᕪᕀᕁᕴᕵᕶᕷᕸᕹᕺᕻᕼᕽᕾᕿᖀᖁᖂᖃᖄᖅ ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔ\\\n";
-        public static string Message; //Текст
-        public static int Key = 0; //Ключ шифрования
+       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#№$%&()*+,-./:;<=>?@[]^_`{|}~АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿" +
+       "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻż" +
+       "Žžſ‴‖‗―‒‐•❶❷❸❹❺❻❼❽❾❿⓫⓬⓭⓮⓯⓰⓱⓲⓳⓴⓿₠₡₢₣₤₥₦₧₨₩₪₫€₭₮₯₰₱₲₳₴₵₸₹₺₻₼₽₾₿Ѳᴁᴂᴆᴚᴔ⁞…⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿⡀⡁⡂⡃⡄⡅⡆⡇⡈⡉⡊⡋⡌⡍⡎⡏⡐⡑⡒⡓⡔⡕⡖⡗⡘⡙⡚⡛⡜⡝⡞⡟⡠⡡⡢⡣⡤⡥⡦⡧⡨⡩" +
+       "⡪⡫⡬⡭⡮⡯⡰⡱⡲⡳⡴⡵⡶⡷⡸⡹⡺⡻⡼⡽⡾⡿⢀⢁⢂⢃⢄⢅⢆⢇⢈⢉⢊⢋⢌⢍⢎⢏⢐⢑⢒⢓⢔⢕⢖⢗⢘⢙⢚⢛⢜⢝⢞⢟⢠⢡⢢⢣⢤⢥⢦⢧⢨⢩⢪⢫⢬⢭⢮⢯⢰⢱⢲⢳⢴⢵⢶⢷⢸⢹⢺⢻⢼⢽⢾⢿⣀⣁⣂⣃⣄⣅⣆⣇⣈⣉⣊⣋⣌⣍⣎⣏⣐⣑⣒⣓⣔⣕⣖⣗⣘⣙⣚⣛⣜⣝⣞⣟⣠⣡⣢⣣⣤⣥⣦⣧⣨⣩⣪⣫⣬⣭⣮⣯⣰⣱⣲⣳⣴⣵⣶⣷⣸⣹⣺⣻⣼⣽⣾⣿ᐍᐎᐏᐐᐑᐒᐓᐔᐕᐖᐗᐘᐙᐚᐛᐜᐝᐞᐟᐠᐡᐢᐣᐤᐥᐦᐧᐨᐩᐪᐫᐬᐭᐮᐯ" +
+       "ᐰᐱᐲᐳᐴᐵᐶᐷᐸᐹᐺᐻᐼᐽᐾᐿᑀᑁᑂᑃᑄᑅᑆᑇᑈᑉᑊᑋᑌᑍᑎᑏᑐᑑᑒᑓᑔᑕᑖᑗᑘᑙᑚᑛᑜᑝᑞᑟᑠᑡᑢᑣᑤᑥᑦᑧᑨᑩᑪᒃᒄᒅᒆᒇᒈᒉᒊᒋᒌᒍᒎᒏᒐᒑᒒᒔᒖᒗᒘᒙᒚᒛᒜᒝᒞᒟᒠᒡᒢᒣᒤᒥᒦᒧᒨᒩᒪᒫᒬᒭᒮᒯᒰᒱᒲᒳᒴᒵᒶᒷᒸᒹᒺᓀᓁᓂᓃᓄᓅᓆᓇᓈᓉᓊᓋᓌᓍᓎᓏᓐᓑᓒᓓᓔᓕᓖᓗᓘᓙᓚᓛᓜᓝᓞᓟᓠᓡᓢᓣᓤᓥᓦᓧᓨ" +
+       "ᓩᓶᓷᓸᓹᓺᓻᓼᓽᓾᓿᔀᔁᔂᔃᔄᔅᔆᔇᔐᔑᔒᔓᔔᔕᔖᔗᔘᔙᔚᔛᔜᔟᔠᔡᔢᔣᔤ—ᔦᔧᔨᔩᔪᔫᔬᔭᔮᔯᔰᔱᔲᔳᔴᔵᔶᔷᔸᔹᔺᔻᔼᔽᔾᕒᕓᕔᕕᕖᕗᕘᕙᕚᕛᕜᕝᕞᕟᕠᕡᕢᕣᕤᕥᕦᕧᕨᕩᕪᕀᕁᕴᕵᕶᕷᕸᕹᕺᕻᕼᕽᕾᕿᖀᖁᖂᖃᖄᖅ ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔ\\\n";
+        public static int Key; //Ключ шифрования
         public static Random Generator = new Random();
         private void convertText_Click(object sender, EventArgs e)
         {
-            String tmpMessage = "";
+            String Message = ""; //Текст
             progressCrypting.Value = progressCrypting.Minimum;
             progressCrypting.Maximum = textFirst.Text.Length;
             if (modeEncrypt.Checked)
             {
-                if (keyModeInput.Checked)
-                {
-                    Random shift = new Random(Key);
-                    for (int i = 0; i < textFirst.TextLength; i++)
-                    {
-                        tmpMessage += Alphabet.ElementAt((Alphabet.IndexOf(textFirst.Text[i]) + shift.Next(0, Alphabet.Length)) % Alphabet.Length);
-                        ++progressCrypting.Value;
-                    }
-                }
-                else if (keyModeRand.Checked)
+                if (keyModeRand.Checked)
                 {
                     Key = Generator.Next(0, 999999999);
                     keyValue.Text = "Ключ: " + Key.ToString();
-                    Random shift = new Random(Key);
-                    for (int i = 0; i < textFirst.TextLength; i++)
-                    {
-                        tmpMessage += Alphabet.ElementAt((Alphabet.IndexOf(textFirst.Text[i]) + shift.Next(0, Alphabet.Length)) % Alphabet.Length);
-                        ++progressCrypting.Value;
-                    }
+                }
+                //Генерация псевдослучайной последовательности
+                Generator = new Random(Key);
+                //Удлинение ключа в двоичной системе счисления
+                string longKey = "";
+                for (int i = 0; i <= (textFirst.TextLength * 10) / Convert.ToString(Key, 2).Length; i++) 
+                    longKey += Convert.ToString(Key, 2);
+                longKey = longKey.Substring(0, textFirst.TextLength * 10);
+                int index = 0;
+
+                for (int i = 0; i < textFirst.TextLength; i++)
+                {
+                    char[] symbol = Convert.ToString((Alphabet.IndexOf(textFirst.Text[i]) + Generator.Next(0, Alphabet.Length)) % Alphabet.Length, 2).PadLeft(10, '0').ToCharArray();
+                    //Операция "Исключающее или"
+                    for (int j = 0; j < symbol.Length; ++j, ++index)
+                        if (symbol[j] == longKey[index])
+                            symbol[j] = '0';
+                        else
+                            symbol[j] = '1';
+                    Message += Alphabet[Convert.ToInt32(new string(symbol), 2)%Alphabet.Length];
+                    ++progressCrypting.Value;
                 }
             }
             else if (modeDecrypt.Checked)
             {
-                Random shift = new Random(Key);
+                //Генерация псевдослучайной последовательности
+                Generator = new Random(Key);
+                //Удлинение ключа в двоичной системе счисления
+                string longKey = "";
+                for (int i = 0; i <= (textFirst.TextLength * 10) / Convert.ToString(Key, 2).Length; i++)
+                    longKey += Convert.ToString(Key, 2);
+                longKey = longKey.Substring(0, textFirst.TextLength * 10);
+                int index = 0;
                 for (int i = 0; i < textFirst.TextLength; i++)
                 {
-                    int index = Alphabet.IndexOf(textFirst.Text[i]) - shift.Next(0, Alphabet.Length);
-                    if (index < 0)
-                        index += Alphabet.Length;
-                    tmpMessage += Alphabet.ElementAt(index);
+                    char[] symbol = Convert.ToString((Alphabet.IndexOf(textFirst.Text[i]) - Generator.Next(0, Alphabet.Length) + Alphabet.Length) % Alphabet.Length, 2).PadLeft(10, '0').ToCharArray();
+                    //Операция "Исключающее или"
+                    for (int j = 0; j < symbol.Length; ++j, ++index)
+                        if (symbol[j] == longKey[index])
+                            symbol[j] = '0';
+                        else
+                            symbol[j] = '1';
+                    Message += Alphabet[Convert.ToInt32(new string(symbol), 2) % Alphabet.Length];
                     ++progressCrypting.Value;
                 }
-
             }
-            textSecond.Text = tmpMessage;
+            textSecond.Text = Message;
         }
 
         private void keyModeInput_CheckedChanged(object sender, EventArgs e)
@@ -112,7 +124,12 @@ namespace DesktopTextEncryptor
             if (!String.IsNullOrEmpty(keyInput.Text))
             {
                 Key = Convert.ToInt32(keyInput.Text);
+                keyInput.Text = Key.ToString();
                 keyValue.Text = "Ключ: " + Key.ToString();
+            }
+            else
+            {
+                keyInput.Text = "0";
             }
         }
 
@@ -146,11 +163,6 @@ namespace DesktopTextEncryptor
 
         }
 
-        private void textFirst_KeyPress(object sender, KeyPressEventArgs e)
-        {
- 
-        }
-
         private void modeDecrypt_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -177,6 +189,10 @@ namespace DesktopTextEncryptor
             Key = 0;
             keyInput.Text = Key.ToString();
             keyValue.Text = "Ключ: " + Key.ToString();
+            textFirst.Clear();
+            textSecond.Clear();
+            progressCrypting.Value = 0;
         }
+
     }
 }

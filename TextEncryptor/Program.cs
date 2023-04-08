@@ -49,7 +49,7 @@ namespace TextEncryptor
                         for (int i = 0; i < number.Length; ++i)
                             s += Convert.ToString(number[i], 2).PadLeft(10, '0');
                         string longKey = "";
-                        for (int i = 0; i <= (s.Length * 10) / Convert.ToString(KEY, 2).Length; i++)
+                        for (int i = 0; i <= (s.Length) / Convert.ToString(KEY, 2).Length; i++)
                             longKey += Convert.ToString(KEY, 2);
                         longKey = longKey.Substring(0, s.Length);
                         string ss = "";
