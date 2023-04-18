@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj": {}
+    "E:\\$Проект\\Продукт\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj": {}
   },
   "projects": {
-    "D:\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj": {
+    "E:\\$Проект\\Продукт\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj",
+        "projectUniqueName": "E:\\$Проект\\Продукт\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj",
         "projectName": "TextEncryptor",
-        "projectPath": "D:\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj",
+        "projectPath": "E:\\$Проект\\Продукт\\MainTextEncryptor\\TextEncryptor\\TextEncryptor.csproj",
         "packagesPath": "C:\\Users\\ge-ko\\.nuget\\packages\\",
-        "outputPath": "D:\\MainTextEncryptor\\TextEncryptor\\obj\\",
+        "outputPath": "E:\\$Проект\\Продукт\\MainTextEncryptor\\TextEncryptor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
