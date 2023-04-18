@@ -74,7 +74,6 @@ namespace DesktopTextEncryptor
                 for (int i = 0; i <= (textFirst.TextLength * 10) / Convert.ToString(Key, 2).Length; i++)
                     longKey += Convert.ToString(Key, 2);
                 longKey = longKey.Substring(0, textFirst.TextLength * 10);
-                textSecond.Text += longKey + '\n';
                 int index = 0;
                 for (int i = 0; i < textFirst.TextLength; i++)
                 {

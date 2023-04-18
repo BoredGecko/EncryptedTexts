@@ -53,3 +53,14 @@ F:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug
 F:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.CoreCompileInputs.cache
 F:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.exe
 F:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.pdb
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\bin\Debug\DesktopTextEncryptor.exe.config
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\bin\Debug\DesktopTextEncryptor.exe
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\bin\Debug\DesktopTextEncryptor.pdb
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.AssemblyReference.cache
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.SuggestedBindingRedirects.cache
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.Form1.resources
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.Properties.Resources.resources
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.GenerateResource.cache
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.csproj.CoreCompileInputs.cache
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.exe
+E:\$Проект\Продукт\MainTextEncryptor\DesktopTextEncryptor\obj\Debug\DesktopTextEncryptor.pdb
